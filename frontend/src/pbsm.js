@@ -5,7 +5,7 @@ export  const Problem = () => {
     const[x,sx]=useState([]);
     useEffect(()=>
       {
-        axios.get("http://localhost:8000/pso")
+        axios.get("https://server-qemg.onrender.com/pso")
         .then( (result)=>
           {
             sx(result.data);

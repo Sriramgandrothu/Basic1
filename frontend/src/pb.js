@@ -9,7 +9,7 @@ export const Pbstatement=()=>
     const submit=async()=>
     {
         try{
-            const res=await axios.post("http://localhost:8000/ps/"+about+"/"+matter)
+            const res=await axios.post("https://server-qemg.onrender.com/ps/"+about+"/"+matter)
             if(res.data)
             {
                 alert('successfully added')

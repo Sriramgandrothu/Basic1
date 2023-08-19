@@ -16,7 +16,7 @@ function Signin()
                 }
                 else{
                 if (cpassword===password){
-                const res=await axios.post("http://localhost:8000/signup/"+name+"/"+mail+"/"+pnum+"/"+password+"/"+cpassword)
+                const res=await axios.post("https://server-qemg.onrender.com/signup/"+name+"/"+mail+"/"+pnum+"/"+password+"/"+cpassword)
                     if (res.data)
                     {
                         alert("saved");
